@@ -1,0 +1,124 @@
+
+.jumbotron{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.jumbotron-item img{
+    width: 100%; 
+}
+.jumbotron-slide-2{
+    position: relative;
+}
+.slide-position-btn{
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    color: #000;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0, 0);
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.slide-position-btn:hover{
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.slide-overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.slide-overlay>h1{
+    font-size: 30px;
+}
+.slide-overlay>p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.slide-overlay>a{
+    color: white;
+    font-weight: 500;
+    background-color: #CD8409;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 50px;
+}
+.slide-overlay>a:hover{
+    background-color: #fff;
+    color: #CD8409;
+}
+
+@media only screen and (max-width: 600px){
+    .slide-overlay{
+        left: 0;
+        transform: translate(0, -50%);
+        gap: 0;
+    }
+    .slide-overlay>h1{
+        font-size: 16px;
+    }
+    .slide-overlay>p{
+        font-size: 10px;
+    }
+    .slide-overlay>a{
+        font-size: 14px;
+        padding: 5px 15px;
+    } 
+    .popular-gallery{
+        margin: 20px !important;
+    }
+}
+.popular-gallery{
+    padding: 25px;
+    background-color: #93262C;
+    border-radius: 50px;
+    margin: 50px;
+    position: relative;
+}
+.popular-item{
+    background-color: #fff;
+    width: 200px !important;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.popular-item>img{
+    width: 100%;
+}
+.popular-item>div{
+    color: #93262C;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.to-product-btn{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.to-product-btn>a{
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #CD8409;
+    background-color: #fff;
+    font-weight: 500;
+}
+.to-product-btn>a:hover{
+    background-color: #CD8409;
+    color: #fff;
+}
